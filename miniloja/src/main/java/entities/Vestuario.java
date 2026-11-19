@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 public class Vestuario extends Produto{
 
-    public Vestuario(String nome, BigDecimal preco, ProdutoCategoria categoria, String descricao) {
-        super(nome, preco, categoria, descricao);
+    public Vestuario(String nome, BigDecimal preco, String descricao) {
+        super(nome, preco, ProdutoCategoria.VESTUARIO, descricao);
     }
 }
