@@ -33,5 +33,4 @@ jobs:
           cache: 'maven'
 
       - name: Build and test
-        working-directory: miniloja
         run: mvn clean verify

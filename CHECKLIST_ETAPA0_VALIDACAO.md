@@ -1,6 +1,6 @@
 # CHECKLIST — Validação Etapa 0 (MiniLoja)
 
-**Fonte de referência:** `miniloja/Planejamento-MiniLoja-Java.md` (seção “4. Roadmap por etapas → Etapa 0”).  
+**Fonte de referência:** `Planejamento-MiniLoja-Java.md` (seção “4. Roadmap por etapas → Etapa 0”).  
 **Data da validação/atualização:** 2026-11-20 (ambiente local).  
 **Branch observado:** `main` (git).  
 **Observação (alinhado agora):** README da raiz atualizado com decisão técnica (remoção temporária de classes extras/fábrica/seletores e foco em `Produto` concreto + `enum`). **Não será criada nova branch na Etapa 0** (decisão registrada). Implementação anterior do **Factory Method revisada** e removida por não agregar valor ao cenário atual.  
@@ -40,7 +40,7 @@
 - [x] Nova branch na Etapa 0: **não será criada** (decisão registrada). Branch/tag anterior não verificada neste fluxo.
 
 ### Build/execução
-- [x] `mvn -q -DskipTests compile` executado em `miniloja` com sucesso (exit 0) nesta atualização
+- [x] `mvn -q -DskipTests compile` executado na raiz do repositório com sucesso (exit 0) nesta atualização
 - [ ] Execução do `Main` **não executada** nesta atualização (apenas build)
 
 ---
@@ -100,7 +100,7 @@
 
 ## 5) Comandos úteis
 ```bash
-cd /home/sales/vhost/MiniLoja/miniloja
+cd /home/sales/vhost/MiniLoja
 mvn -q -DskipTests compile
 java -cp target/classes Main
 git status --short
