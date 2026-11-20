@@ -215,22 +215,22 @@ src/main/java/
 **Objetivo:** preparar a base do projeto e simplificar a modelagem atual
 antes de expandir o sistema.
 
--   [ ] Revisar a implementação atual de Factory Method.
--   [ ] Registrar no README ou em uma nota técnica o que foi aprendido
+-   [x] Revisar a implementação atual de Factory Method.
+-   [~] Registrar no README ou em uma nota técnica o que foi aprendido
     com o padrão.
--   [ ] Manter uma branch ou tag com a implementação anterior, se for
+-   [x] Manter uma branch ou tag com a implementação anterior, se for
     útil para consulta.
--   [ ] Transformar `Produto` em uma classe concreta, caso categoria
+-   [x] Transformar `Produto` em uma classe concreta, caso categoria
     continue sendo sua única variação.
--   [ ] Manter `ProdutoCategoria` como `enum`.
--   [ ] Remover subclasses que não possuem atributos ou comportamentos
+-   [x] Manter `ProdutoCategoria` como `enum`.
+-   [x] Remover subclasses que não possuem atributos ou comportamentos
     próprios.
--   [ ] Remover factories e selector que não agregam valor ao cenário
+-   [x] Remover factories e selector que não agregam valor ao cenário
     atual.
--   [ ] Definir identificador único para produto.
--   [ ] Definir validações essenciais da entidade.
--   [ ] Organizar os pacotes iniciais.
--   [ ] Garantir que o projeto compile e execute.
+-   [x] Definir identificador único para produto.
+-   [x] Definir validações essenciais da entidade.
+-   [x] Organizar os pacotes iniciais.
+-   [~] Garantir que o projeto compile e execute.
 
 **Conceitos Java:** classes, objetos, construtores, encapsulamento,
 `enum`, `UUID`, `BigDecimal`, pacotes e modificadores de acesso.
