@@ -243,18 +243,18 @@ domínio, sem hierarquias artificiais, e o projeto compila.
 **Objetivo:** implementar o primeiro fluxo completo, do terminal até a
 camada de domínio e armazenamento.
 
--   [ ] Criar contrato `ProdutoRepository`.
--   [ ] Criar implementação `ProdutoRepositoryInMemory`.
--   [ ] Implementar salvar.
--   [ ] Implementar buscar por ID.
--   [ ] Implementar listar todos.
--   [ ] Implementar atualizar.
--   [ ] Implementar remover.
--   [ ] Criar `ProdutoService`.
--   [ ] Implementar validações de cadastro e atualização.
--   [ ] Criar menu de produtos.
--   [ ] Tratar identificadores inexistentes e entradas inválidas.
--   [ ] Testar manualmente todos os fluxos.
+-   [x] Criar contrato `ProdutoRepository`.
+-   [x] Criar implementação `ProdutoRepositoryInMemory`.
+-   [x] Implementar salvar.
+-   [x] Implementar buscar por ID.
+-   [x] Implementar listar todos.
+-   [~] Implementar atualizar (disponível no repositório; falta expor no serviço e no menu).
+-   [~] Implementar remover (disponível no repositório como `excluir`; falta expor no serviço e no menu).
+-   [~] Criar `ProdutoService` (criado, mas apenas com cadastro e dependente da implementação em memória).
+-   [~] Implementar validações de cadastro e atualização (cadastro na entidade; falta o fluxo de atualização).
+-   [~] Criar menu de produtos (criado; apenas a opção de cadastrar está funcional).
+-   [~] Tratar identificadores inexistentes e entradas inválidas (parcial no repositório; faltas no terminal).
+-   [~] Testar manualmente todos os fluxos (build e cadastro verificados; demais fluxos indisponíveis).
 
 **Conceitos Java:** interfaces, `List`, `Map`, `HashMap`, `Optional`,
 generics, exceções e separação de responsabilidades.
@@ -585,11 +585,13 @@ Para cada funcionalidade:
 
 ### Registro de evolução
 
-  Data   Etapa/módulo   O que foi concluído   Dificuldades e decisões
-  ------ -------------- --------------------- -------------------------
-                                              
-                                              
-                                              
+  Data       Etapa/módulo   O que foi concluído                         Dificuldades e decisões
+  ---------- -------------- ------------------------------------------- -------------------------------------------------
+  2026-11-20 Etapa 0         `Produto` concreto, `enum`, validações,    Factory Method revisado e removido; sem nova branch.
+                             build OK; decisões no README.
+  2026-11-20 Etapa 1         Contrato e repositório em memória,         Service e menu parciais; entradas inválidas ainda
+                             `ProdutoService` e menus criados;          não tratadas. Ver `CHECKLIST_ETAPA1_VALIDACAO.md`.
+                             cadastro funcional pelo terminal.
 
 ------------------------------------------------------------------------
 
